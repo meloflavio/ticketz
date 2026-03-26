@@ -22,8 +22,8 @@ services:
     depends_on:
       - postgres
       - redis
-    ports:
-      - "3000"
+    expose:
+      - 8081
     networks:
       - ticketz
 
